@@ -1,9 +1,10 @@
 <?php
 
 // Conexão com o banco de dados
-include_once ('conexao.php')
-{
+include_once ('conexao.php');
+
 // Dados do formulário
+
 $nome = $_POST["nome"];
 $preco = $_POST["preco"];
 $quantidade = $_POST["quantidade"];
@@ -19,7 +20,7 @@ $conexao->query($sql);
 
 // Redirecionamento para a página principal
 header("Location: index.php");
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +57,7 @@ header("Location: index.php");
             <label for="imagem">Imagem</label>
             <input type="file" name="imagem" id="imagem" required>
         </div>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
